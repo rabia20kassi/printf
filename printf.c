@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		{
 			x++;
 			if (format[x] == '\0')
-				break;
+				return (-1);
 			len += switch_help(format[x], args);
 		}
 		else
