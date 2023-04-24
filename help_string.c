@@ -17,6 +17,6 @@ int help_string(va_list args)
 		i++;
 	}
 	return (i);
-
+	_putchar('\n');
 }
 
