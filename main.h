@@ -13,5 +13,6 @@ int _putchar(char c);
 int help_string(va_list args);
 int help_char(va_list args);
 int switch_help(char id, va_list args);
+int help_int(va_list args);
 
 #endif
