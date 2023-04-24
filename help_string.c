@@ -9,38 +9,13 @@
 int help_string(va_list args)
 {
 	char *s = va_arg(args, char *);
-	int i = 0, j = 0;
-
-	if (s == NULL)
-		s = "(null)";
-
-	while (s[j])
+	int i = 0;
+	while (s[i] != '\0')
 	{
-		if (s[j] == '\\')
-		{
-			j++;
-			switch (s[j])
-			{
-			case 'n':
-				i += _putchar('\n');
-				break;
-			case 't':
-				i += _putchar('\t');
-				break;
-			case '%':
-				i += _putchar('%');
-				break;
-			default:
-				i += _putchar('\\');
-				i += _putchar(s[j]);
-				break;
-			}
-		}
-		else
-		{
-			i += _putchar(s[j]);
-		}
-		j++;
+	       	_putchar(s[i]);
+		i++;
 	}
 	return (i);
+
 }
+
