@@ -3,6 +3,27 @@
 #include <stdarg.h>
 
 /** Team project Laila_Rabia **/
+/**
+ * set_int - use recursion
+ * @a: first argument
+ * @i: second argument
+ * Return: void
+ */
+void set_int(int a, int *i)
+{
+	if (a < 0)
+	{
+		_putchar('-');
+		(*i)++;
+		a = -a;
+	}
+	if (a / 10)
+	{
+		set_int(a / 10, i);
+	}
+	_putchar('0' + (a % 10));
+	(*i)++;
+}
 
 /**
  * help_int - manage integer
@@ -12,22 +33,23 @@
  */
 int help_int(va_list args)
 {
-	int n = va_arg(args, int);
-	int i = 0, div = 1;
+	int a = va_arg(args, int);
+	int i = 0;
 
-	if (n < 0)
+	if (a == 0)
 	{
-		i += _putchar('-');
-		n = (-1) * n;
+		_putchar('0');
+		return (1);
 	}
-	while (n / div > 9)
-		div *= 10;
-	while (div != 0)
+
+	if (a == INT_MIN)
 	{
-		i += _putchar('0' + n / div);
-		n %= div;
-		div /= 10;
+		_putchar('-');
+		_putchar('2');
+		set_int(147483648, &i);
+		i += 2;
+		return (i);
 	}
+	set_int(a, &i);
 	return (i);
 }
-
