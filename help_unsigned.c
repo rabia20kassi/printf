@@ -3,7 +3,7 @@
 /*** team project Laila_Rabia  ***/
 /**
  * help_unsigned - convert decimal to hexadecimal
- * @n: the first argument
+ * @a: the first argument
  * @c: the second argument
  * Return: integer
  */
