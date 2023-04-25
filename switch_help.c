@@ -27,6 +27,9 @@ int switch_help(char id, va_list args)
 	case 'i':
 		i += help_int(args);
 		break;
+	case 'b':
+		i += help_bin(args);
+		break;
 	default:
 		i += _putchar('%');
 		i += _putchar(id);
