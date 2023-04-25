@@ -2,7 +2,7 @@
 
 /*** team project Laila_Rabia ***/
 /**
- * help_oct - convert the number to octal
+ * _octal - convert the number to octal
  * @a: argument
  * Return: integer
  */

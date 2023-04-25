@@ -2,19 +2,19 @@
 
 /*** team project Laila_Rabia  ***/
 /**
- * help_unsigned - convert decimal to hexadecimal
+ * help_uns - convert decimal to hexadecimal
  * @a: the first argument
  * @c: the second argument
  * Return: integer
  */
-int help_unsigned(unsigned int a, char *c)
+int help_uns(unsigned int a, char *c)
 {
 	int q = 0;
 
 	if (a / 16)
 	{
-		q += help_unsigned(a / 16, c);
-		q += help_unsigned(a % 16, c);
+		q += help_uns(a / 16, c);
+		q += help_uns(a % 16, c);
 	}
 	else
 	{
