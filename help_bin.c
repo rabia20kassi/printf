@@ -17,10 +17,16 @@ int help_bin(va_list args)
 	mod = num % 2;
 	digits[i] = mod;
 	i++;
+	while (num > 1)
+	{
+		num /= 2;
+		mod = num % 2;
+		digits[i] = mod;
+		i++;
+	}
 	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar('0' + digits[j]);
 	}
 	return (i);
-
 }
