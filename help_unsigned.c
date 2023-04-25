@@ -13,7 +13,7 @@ int help_unsigned(unsigned int a, char *c)
 
 	if (a / 16)
 	{
-		q += help_unsinged(a / 16, c);
+		q += help_unsigned(a / 16, c);
 		q += help_unsigned(a % 16, c);
 	}
 	else

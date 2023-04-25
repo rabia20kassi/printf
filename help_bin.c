@@ -9,16 +9,11 @@
  */
 int help_bin(va_list args)
 {
-	int num = va_arg(args, int);
+	unsigned int num = va_arg(args, int);
 	int j, i = 0;
 	int mod;
-	int digits[32];
+	int digits[64];
 
-	if (num < 0)
-	{
-		_putchar('-');
-		num *= (-1);
-	}
 	mod = num % 2;
 	digits[i] = mod;
 	i++;

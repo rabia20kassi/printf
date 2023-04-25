@@ -15,6 +15,7 @@ int help_char(va_list args);
 int switch_help(char id, va_list args);
 int help_int(va_list args);
 int help_bin(va_list args);
+int help_unsigned(unsigned int a, char *c);
 
 
 #endif
