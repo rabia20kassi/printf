@@ -1,7 +1,6 @@
 #include "main.h"
 
 /*** team project rabia_laila ***/
-
 /**
  * help_bin - manage the 'b' case
  * @args: The first argument

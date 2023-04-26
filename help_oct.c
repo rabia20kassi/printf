@@ -14,12 +14,12 @@ int _octal(va_list args)
 	int mod;
 	int digits[64];
 
-	while (num>0)
+	while (num > 0)
 	{
-	mod = num%8;
+	mod = num % 8;
 	digits[i] = mod;
 	i++;
-	n /=8;
+	n /= 8;
 	}
 
 	for (j = i - 1; j >= 0; j--)
