@@ -1,18 +1,30 @@
 #include "main.h"
 
-/*** team project Laila_Rabia ***/
+/*** team project rabia_laila ***/
+
 /**
- * _octal - convert the number to octal
- * @a: argument
+ * _octal - manage the 'o' case
+ * @args: The first argument
  * Return: integer
  */
-int _octal(unsigned int a)
+int _octal(va_list args)
 {
-	int c = 0;
-	char *d = "01234567";
+	unsigned int num = va_arg(args, int);
+	int j, i = 0;
+	int mod;
+	int digits[64];
 
-	if (a / 8)
-		c += _octal(a / 8);
-	c += _putchar(d[a % 8]);
-	return (c);
+	while (num>0)
+	{
+	mod = num%8;
+	digits[i] = mod;
+	i++;
+	n /=8;
+	}
+
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar('0' + digits[j]);
+	}
+	return (i);
 }

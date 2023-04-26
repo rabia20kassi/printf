@@ -17,7 +17,7 @@ int help_int(va_list args);
 int help_bin(va_list args);
 void set_int(int a, int *i);
 int help_int(va_list args);
-int help_uns(unsigned int a, char *c);
-
+int help_uns(va_list args);
+int _octal(va_list args);
 
 #endif

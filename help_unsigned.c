@@ -7,18 +7,19 @@
  * @c: the second argument
  * Return: integer
  */
-int help_uns(unsigned int a, char *c)
+int help_uns(va_list args)
 {
-	int q = 0;
+	int j = va_arg(args, int);
+	int i = 0;
 
-	if (a / 16)
+	if (j <= 16)
 	{
-		q += help_uns(a / 16, c);
-		q += help_uns(a % 16, c);
+		i+= _putchar('0' + j);
 	}
 	else
 	{
-		q += _putchar(c[a]);
+		i += help_uns(j / 16);
+		i += help_uns(j % 16);
 	}
-	return (q);
+	return (i);
 }
