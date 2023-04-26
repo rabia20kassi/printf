@@ -21,7 +21,7 @@ int help_uns(va_list args);
 int _octal(va_list args);
 int help_hexa_up(va_list args);
 int help_hexa_low(va_list args);
-
+int help_str_hex(va_list args);
 
 
 #endif
