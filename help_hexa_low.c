@@ -34,4 +34,3 @@ int help_hexa_low(va_list args)
 	}
 	return (i);
 }
-

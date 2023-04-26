@@ -34,4 +34,3 @@ int help_hexa_up(va_list args)
 	}
 	return (i);
 }
-
