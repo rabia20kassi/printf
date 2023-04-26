@@ -1,20 +1,19 @@
 #include "main.h"
 
-/*** team project Laila_Rabia  ***/
+/*** team project Rabia_Laila  ***/
 /**
- * help_uns - convert decimal to hexadecimal
- * @a: the first argument
- * @c: the second argument
+ * help_uns - manage 'u' case
+ * @args: the first argument
  * Return: integer
  */
 int help_uns(va_list args)
 {
-	unsigned int num = va_arg(args, int);	
+	unsigned int num = va_arg(args, int);
 	int j, i = 0;
 	int mod;
 	int digits[64];
-	
-	while (num>0)
+
+	while (num > 0)
 	{
 		mod = num % 10;
 		digits[i] = mod;
