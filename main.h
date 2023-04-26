@@ -19,5 +19,9 @@ void set_int(int a, int *i);
 int help_int(va_list args);
 int help_uns(va_list args);
 int _octal(va_list args);
+int help_hexa_up(va_list args);
+int help_hexa_low(va_list args);
+
+
 
 #endif
