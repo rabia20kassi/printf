@@ -37,13 +37,13 @@ int switch_help(char id, va_list args)
 		i += _octal(args);
 		break;
 	case 'X':
-		i += help_hexa_up(args);
+		i += help_hexa_up(va_arg(args, unsigned int));
 		break;
 	case 'x':
 		i += help_hexa_low(args);
 		break;
 	case 'S':
-		i += help_str_hex(args);
+		i += help_str_hex(va_arg(args, char *));
 		break;
 	default:
 		i += _putchar('%');

@@ -3,27 +3,29 @@
 /*** team project rabia_laila ***/
 /**
  * help_str_hex - print string with hex escape
- * @args: The first argument
+ * @str: The first argument
  * Return: integer
  */
-int help_str_hex(va_list args)
+int help_str_hex(char *str)
 {
-	char *str = va_arg(args, char *);
-	int i = 0;
+	int i = 0, j = 0;
+
+	if (str == NULL)
+		str = "(null)";
 	while (str[i] != '\0')
 	{
-		if (str[i] < 32 || str[i] >= 127)
+		if ((str[i] > 0 && str[i] < 32) || str[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
-			_putchar('0');
-			help_hexa_up(args);
+			j += help_hexa_up((unsigned char)str[i]);
 		}
 		else
 		{
 			_putchar(str[i]);
+			j++;
 		}
 		i++;
 	}
-	return (i);
+	return (j);
 }

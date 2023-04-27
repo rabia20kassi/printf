@@ -4,12 +4,11 @@
 
 /**
  * help_hexa_up - manage the 'X' case
- * @args: The first argument
+ * @num: The first argument
  * Return: integer
  */
-int help_hexa_up(va_list args)
+int help_hexa_up(unsigned int num)
 {
-	unsigned int num = va_arg(args, int);
 	int mod;
 	char digits[64];
 	int j, i = 0;

@@ -45,9 +45,8 @@ int main(void)
 	  printf("\n");
 
     _printf("%S\n", "Best\nSchool");
-
-    printf("%S\n", "Best\nSchool");
 _printf("%S\n", "nice\tSchool");
+_printf("%S" , '\0');
 
     return (0);
 }
