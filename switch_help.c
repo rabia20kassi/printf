@@ -42,9 +42,6 @@ int switch_help(char id, va_list args)
 	case 'x':
 		i += help_hexa_low(args);
 		break;
-	case 'S':
-		i += help_str_hex(va_arg(args, char *));
-		break;
 	default:
 		i += _putchar('%');
 		i += _putchar(id);
